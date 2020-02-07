@@ -1,0 +1,19 @@
+{
+  "name": "gatsby-starter-bootstrap",
+  "version": "1.0.0",
+  "description": "Bootstraps gatsby-starter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Piers Olenski",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "inquirer": "^7.0.4",
+    "insert-line": "^1.1.0",
+    "line-number": "^0.1.0",
+    "npm": "^6.13.7",
+    "replace-in-file": "^5.0.2"
+  }
+}
