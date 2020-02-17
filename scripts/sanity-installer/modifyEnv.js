@@ -6,9 +6,9 @@ const lineExists = require(`../utils/lineExists`);
 const path = `.env`;
 
 function modifyEnv(config) {
-  const settings = `SANITY_PROJECT_ID = ${config.projectId}
-SANITY_DATASET = ${config.dataset}
-SANITY_TOKEN = ${config.token}`;
+  const settings = `GATSBY_SANITY_PROJECT_ID = ${config.projectId}
+GATSBY_SANITY_DATASET = ${config.dataset}
+GATSBY_SANITY_TOKEN = ${config.token}`;
 
   if (!fs.existsSync(path)) {
     fs.writeFile(`.env`, settings, err => {

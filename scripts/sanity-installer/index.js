@@ -4,9 +4,9 @@ const addDotEnv = require(`./addDotEnv`);
 const addGatsbyPlugin = require(`../utils/addGatsbyPlugin`);
 
 const pluginOptions = {
-  projectId: `process.env.SANITY_PROJECT_ID`,
-  dataset: `process.env.SANITY_DATASET`,
-  token: `process.env.SANITY_TOKEN`,
+  projectId: `process.env.GATSBY_SANITY_PROJECT_ID`,
+  dataset: `process.env.GATSBY_SANITY_DATASET`,
+  token: `process.env.GATSBY_SANITY_TOKEN`,
 };
 
 async function installSanity(config) {
