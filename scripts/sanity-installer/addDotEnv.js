@@ -5,8 +5,9 @@ const lineExists = require(`../utils/lineExists`);
 const path = `./gatsby-config.js`;
 
 const dotEnv = `require('dotenv').config({
-  path: \`.env.\${process.env.NODE_ENV}\`
-});`;
+  path: '.env'
+});
+`;
 
 function addDotEnv() {
   if (!lineExists(path, /require\('dotenv'\)/)) {
