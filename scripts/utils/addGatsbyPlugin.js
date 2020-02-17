@@ -8,7 +8,7 @@ const path = `./gatsby-config.js`;
 
 function deserializeOptions(options) {
   return Object.entries(options)
-    .map(([key, value]) => `${key}: ${value},`)
+    .map(([key, value]) => `${key}: ${value},`.padStart(8, ' '))
     .join('\n\t\t');
 }
 
@@ -17,7 +17,7 @@ function addGatsbyPlugin(pluginName, options) {
     const plugin = `    {
       resolve: '${pluginName}',
       options: {
-        ${deserializeOptions(options)}
+${deserializeOptions(options)}
       },
     },`;
 
